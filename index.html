@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Кооператив «Коло» | Возможности через сотрудничество</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Кооператив Коло">
+      <span class="brand-mark">K</span>
+      <span>Кооператив «Коло»</span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#mission">О кооперативе</a>
+      <a href="#join">Членство</a>
+      <a href="#governance">Управление</a>
+      <a href="#vote">Голосование</a>
+      <a href="#forum">Общение</a>
+      <a href="#media">Новости</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img src="assets/community-hero.png" alt="Публичная гражданская встреча в швейцарском городе">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Торгово-промышленный и социальный кооператив</p>
+        <h1>«Коло» объединяет таланты в Швейцарии</h1>
+        <p class="lead">Совместное производство, честная торговля, обучение и социальные проекты для профессиональной интеграции переселенцев. Каждый член участвует в управлении по принципу «один член — один голос».</p>
+        <div class="counter">
+          <span id="memberCount">70 000</span>
+          <small>зарегистрированных участников кооператива</small>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#join">Стать членом</a>
+          <a class="button secondary" href="#mission">Как работает «Коло»</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="band status-grid" aria-label="Показатели платформы">
+      <div>
+        <span id="paidTotal">7 000 000 CHF</span>
+        <small>членские и партнерские взносы</small>
+      </div>
+      <div>
+        <span id="registeredTotal">46 120</span>
+        <small>профилей участников</small>
+      </div>
+      <div>
+        <span id="publicTotal">8 430</span>
+        <small>активных участников проектов</small>
+      </div>
+      <div>
+        <span id="refundTotal">0 CHF</span>
+        <small>возвращено при прекращении участия</small>
+      </div>
+    </section>
+
+    <section id="mission" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Социальная экономика</p>
+        <h2>Создаем работу и возможности вместе</h2>
+        <p class="muted">Кооператив помогает участникам раскрывать профессиональные и творческие способности, находить партнеров, производить и продавать товары и услуги.</p>
+      </div>
+      <div class="mission-grid">
+        <article class="mission-item">
+          <span>01</span>
+          <h3>Интеграция и работа</h3>
+          <p>Рабочие места, языковая поддержка, обучение и профессиональные связи в Швейцарии.</p>
+        </article>
+        <article class="mission-item">
+          <span>02</span>
+          <h3>Производство и торговля</h3>
+          <p>Совместный бренд, ярмарки, маркетинг и каналы сбыта продукции членов кооператива.</p>
+        </article>
+        <article class="mission-item">
+          <span>03</span>
+          <h3>Фонд талантов</h3>
+          <p>Микрогранты до 3 000 CHF, беспроцентные займы и консультации для новых проектов.</p>
+        </article>
+        <article class="mission-item">
+          <span>04</span>
+          <h3>Демократическое управление</h3>
+          <p>Общее собрание, представители секторов, открытые решения и финансовый контроль.</p>
+        </article>
+      </div>
+      <div class="sectors" aria-label="Направления кооператива">
+        <span>Торговля</span><span>Ремесла</span><span>Фермерство</span><span>Культура</span><span>Образование</span><span>Технологии</span>
+      </div>
+    </section>
+
+    <section id="join" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Вступление и поддержка</p>
+        <h2>Выберите формат участия</h2>
+      </div>
+
+      <div class="plans" role="tablist" aria-label="Варианты участия">
+        <button class="plan active" type="button" data-plan="donation">
+          <span>Поддержать кооператив</span>
+          <strong>от 100 CHF</strong>
+          <small>Взнос сторонника без оформления членства и права голоса.</small>
+        </button>
+        <button class="plan" type="button" data-plan="questionnaire">
+          <span>Стать членом</span>
+          <strong>100 CHF</strong>
+          <small>Заявление, профиль участника, доступ к программам и один голос.</small>
+        </button>
+        <button class="plan" type="button" data-plan="public">
+          <span>Активный участник</span>
+          <strong>100 CHF</strong>
+          <small>Членство, видео-визитка и участие в проектах или выборах сектора.</small>
+        </button>
+      </div>
+
+      <div class="workspace two-column">
+        <form id="joinForm" class="panel" autocomplete="on">
+          <h3>Заявление на участие</h3>
+          <label>
+            Имя и фамилия
+            <input name="name" required placeholder="Например: Olena Ivanenko">
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required placeholder="name@example.ch">
+          </label>
+          <label>
+            Кантон
+            <select name="canton">
+              <option>Zurich</option>
+              <option>Bern</option>
+              <option>Vaud</option>
+              <option>Geneva</option>
+              <option>Basel-Stadt</option>
+              <option>Ticino</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label class="conditional" data-for="questionnaire public">
+            Направление кооператива
+            <select name="sector">
+              <option>Торговля</option>
+              <option>Ремесла</option>
+              <option>Фермерство</option>
+              <option>Культура</option>
+              <option>Образование</option>
+              <option>Технологии</option>
+            </select>
+          </label>
+          <label>
+            Сумма, CHF
+            <input type="number" name="amount" min="100" step="10" value="100">
+          </label>
+          <label class="conditional" data-for="questionnaire public">
+            Цели и необходимая поддержка
+            <textarea name="needs" rows="3" placeholder="Работа, обучение, производство, сбыт, запуск проекта"></textarea>
+          </label>
+          <label class="conditional" data-for="questionnaire public">
+            Компетенции и предложение
+            <textarea name="offers" rows="3" placeholder="Что вы производите, умеете или готовы развивать вместе"></textarea>
+          </label>
+          <label class="conditional" data-for="public">
+            Ссылка на видео-визитку
+            <input name="video" placeholder="https://...">
+          </label>
+          <label class="check">
+            <input type="checkbox" name="terms" required>
+            <span>Принимаю Статут, кооперативные принципы и условия прекращения участия.</span>
+          </label>
+          <button class="button primary" type="submit">Подать заявление и внести взнос</button>
+        </form>
+
+        <aside class="panel">
+          <h3>Последний ID участника</h3>
+          <div class="id-box" id="issuedId">KOLO-70000</div>
+          <p class="muted">Члены кооператива получают уникальный ID для доступа к голосованиям, отчетам и программам поддержки.</p>
+          <div class="divider"></div>
+          <h3>Прекращение участия</h3>
+          <label>
+            ID участника
+            <input id="cancelId" placeholder="KOLO-70001">
+          </label>
+          <label>
+            Причина
+            <select id="cancelReason">
+              <option>Не соблюдены условия сотрудничества</option>
+              <option>Запрос участника</option>
+              <option>Ошибка платежа</option>
+            </select>
+          </label>
+          <button class="button danger" id="cancelButton" type="button">Прекратить участие и оформить возврат</button>
+          <ul class="activity" id="activityLog" aria-live="polite"></ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="governance" class="section governance-band">
+      <div class="section-heading">
+        <p class="eyebrow">Прозрачное управление</p>
+        <h2>Члены определяют развитие кооператива</h2>
+      </div>
+      <div class="governance-grid">
+        <article>
+          <strong>Общее собрание</strong>
+          <p>Утверждает стратегию, бюджет, распределение прибыли и изменения Статута.</p>
+        </article>
+        <article>
+          <strong>Совет представителей</strong>
+          <p>Делегаты от направлений определяют приоритеты и контролируют Правление.</p>
+        </article>
+        <article>
+          <strong>Правление</strong>
+          <p>Организует текущую деятельность, проекты, сделки и партнерства.</p>
+        </article>
+        <article>
+          <strong>Ревизионная комиссия</strong>
+          <p>Проверяет финансовую отчетность и целевое использование средств.</p>
+        </article>
+      </div>
+      <div class="profit-model">
+        <div><strong>50%</strong><span>развитие кооператива</span></div>
+        <div><strong>20%</strong><span>Фонд поддержки талантов</span></div>
+        <div><strong>10%</strong><span>резервный фонд</span></div>
+        <div><strong>20%</strong><span>распределение членам по решению собрания</span></div>
+      </div>
+      <p class="muted">Пример распределения прибыли. Процентные доли ежегодно утверждаются органами управления кооператива.</p>
+    </section>
+
+    <section id="vote" class="section split-band">
+      <div class="section-heading">
+        <p class="eyebrow">Один член — один голос</p>
+        <h2>Участвуйте в решениях кооператива</h2>
+      </div>
+      <div class="workspace two-column">
+        <div class="panel">
+          <h3>Вход участника</h3>
+          <label>
+            Ваш ID
+            <input id="loginId" placeholder="KOLO-70001">
+          </label>
+          <button class="button secondary" id="loginButton" type="button">Авторизоваться</button>
+          <p id="authState" class="muted">Статус: не авторизован.</p>
+        </div>
+        <div class="panel">
+          <h3>Текущее голосование</h3>
+          <p>Направить 20% годовой прибыли в Фонд поддержки талантов?</p>
+          <div class="vote-options">
+            <button type="button" data-vote="yes">Да</button>
+            <button type="button" data-vote="no">Нет</button>
+            <button type="button" data-vote="skip">Не компетентен</button>
+          </div>
+          <div class="bars" id="voteBars"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="forum" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Коммуникация</p>
+        <h2>Площадка для общения и новых тем</h2>
+      </div>
+      <div class="workspace two-column">
+        <form id="topicForm" class="panel">
+          <h3>Предложить тему или проект</h3>
+          <label>
+            Название
+            <input name="title" required placeholder="Совместная ярмарка в кантоне Vaud">
+          </label>
+          <label>
+            Категория
+            <select name="category">
+              <option>Совместный проект</option>
+              <option>Производство</option>
+              <option>Торговля</option>
+              <option>Образование</option>
+              <option>Социальная программа</option>
+            </select>
+          </label>
+          <label>
+            Сообщение
+            <textarea name="body" rows="4" required placeholder="Коротко опишите вопрос или предложение"></textarea>
+          </label>
+          <button class="button primary" type="submit">Опубликовать тему</button>
+        </form>
+        <div class="panel">
+          <h3>Темы сообщества</h3>
+          <div id="topics" class="topics"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pollbot" class="section split-band">
+      <div class="section-heading">
+        <p class="eyebrow">Бот-конструктор</p>
+        <h2>Опросы на разные темы</h2>
+      </div>
+      <div class="workspace two-column">
+        <form id="pollForm" class="panel">
+          <h3>Создать опрос</h3>
+          <label>
+            Вопрос
+            <input name="question" required placeholder="Какая поддержка сейчас приоритетна?">
+          </label>
+          <label>
+            Режим ответов
+            <select name="mode">
+              <option value="standard">Да / Нет / Не компетентен</option>
+              <option value="context">Ответы по контексту вопроса</option>
+            </select>
+          </label>
+          <button class="button primary" type="submit">Собрать варианты</button>
+        </form>
+        <div class="panel">
+          <h3>Черновик опроса</h3>
+          <div id="pollPreview" class="poll-preview muted">Введите вопрос, чтобы бот предложил варианты ответов.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="media" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Медиа-мониторинг</p>
+        <h2>Новости, общественный эффект и открытость</h2>
+      </div>
+      <div class="media-grid">
+        <article class="panel">
+          <h3>Социальный эффект в Швейцарии</h3>
+          <p class="sentiment positive">Тон: осторожно-позитивный</p>
+          <ul>
+            <li>Количество созданных рабочих мест и запущенных проектов.</li>
+            <li>Результаты интеграционных и образовательных программ.</li>
+            <li>Истории участников повышают доверие к социальной экономике.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3>Открытая отчетность</h3>
+          <p class="sentiment neutral">Тон: смешанный</p>
+          <ul>
+            <li>Ежеквартальные отчеты Правления о проектах и финансах.</li>
+            <li>Отдельный открытый отчет Фонда поддержки талантов.</li>
+            <li>Ежегодный отчет после проверки Ревизионной комиссией.</li>
+          </ul>
+        </article>
+        <article class="panel social-panel">
+          <h3>Социальные сети и автопостинг</h3>
+          <div class="socials">
+            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="https://t.me" target="_blank" rel="noreferrer">Telegram</a>
+          </div>
+          <button class="button secondary" id="postButton" type="button">Сформировать автопост</button>
+          <pre id="postDraft" aria-live="polite"></pre>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Торгово-промышленный и социальный кооператив «Коло»</span>
+    <span>Прототип цифровой платформы кооператива · юридические документы и платежи требуют проверки в Швейцарии</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
